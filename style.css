@@ -1,0 +1,110 @@
+/* === General Layout === */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #1c1c1c, #111);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Press Start 2P', sans-serif;
+  color: #fff;
+}
+
+/* === Canvas Area === */
+canvas {
+  border: 3px solid #555;
+  background: #242424;
+  image-rendering: pixelated;
+}
+
+/* === HUD === */
+#hud {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+#coins {
+  color: #f1c40f;
+}
+
+/* === Dialog Box === */
+#dialogBox {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 20, 20, 0.8);
+  border: 2px solid #999;
+  border-radius: 10px;
+  padding: 16px;
+  width: 60%;
+  color: #fff;
+  display: none;
+  text-align: center;
+}
+
+/* === Login Card === */
+.center-card {
+  width: 360px;
+  padding: 22px;
+  background: rgba(10, 10, 10, 0.9);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+.center-card input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+}
+
+.center-card button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #6c5ce7;
+  color: white;
+}
+
+.center-card button:hover {
+  background: #a29bfe;
+}
+
+/* === Shop Modal === */
+#shop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(30, 30, 30, 0.95);
+  border: 2px solid #888;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  text-align: center;
+}
+
+.shop-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.shop-item:hover {
+  background: #333;
+}
+
